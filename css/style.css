@@ -11,6 +11,14 @@ li {
     list-style: none;
 }
 
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
 .container {
     margin: 0 auto;
     width: 800px;
@@ -25,14 +33,22 @@ li {
     height: 600px;
 }
 
-.nav-container-h {
-    height: 70px;
+.flex_height_100 {
+    height: 100%;
+}
+
+.flex_height_140 {
+    height: 140px;
 }
 
 .row {
     display: flex;
     height: 100%;
     background-color: orange;
+}
+
+.ca-center-items { /* ca sta per cross axis*/
+    align-items: center;
 }
 
 .item {
@@ -51,6 +67,10 @@ li {
     width: 40%;
 }
 
+.col-1 {  /* forse sarebbe più corretto 2*/
+    width: calc(100% / 6);
+}
+
 .bg-azure {
     background-color: rgb(93, 204, 204);
 }
@@ -62,3 +82,18 @@ li {
 .bg-black {
     background-color: black;
 }
+
+.fat {
+    flex-grow: 1;
+}
+
+.border-white {
+    border-top: 2px solid white;
+}
+
+.flex-footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* non so quali mettere in regole di debug, mi sembra tutto utile */
